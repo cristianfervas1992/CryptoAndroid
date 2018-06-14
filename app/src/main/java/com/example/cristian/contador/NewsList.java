@@ -1,10 +1,15 @@
 package com.example.cristian.contador;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -15,6 +20,11 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Created by cristian on 11-06-18.
@@ -48,6 +58,8 @@ public class NewsList extends Activity {
                                                 + "Fuente: "+news[0].getSource()+"\n"
                                                 +"Fecha de Publicacion: "+news[0].getPublished_on()+"\n"
                                                 +"Imagen: "+news[0].getSourceImg());
+                                new DownloadImageTask((ImageView) findViewById(R.id.imageView1))
+                                        .execute(news[0].getSourceImg());
                                 //
                                 objView = (TextView) findViewById(R.id.objTxt2);
                                 objView.setText("Titulo: "+ news[1].getTitle()+"\n"
@@ -182,24 +194,29 @@ public class NewsList extends Activity {
             }
         });
 
+    }
+    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+        ImageView bmImage;
 
-        /*textView = (TextView) findViewById(R.id.txt);
-        News news;
-        Gson gson = new Gson();
-        Bundle dato = getIntent().getExtras();
-        int largo = dato.getInt("largo");
-        System.out.println("largoooooo"+largo);
-        String muestra = Integer.toString(largo);
-        //for(int i=0;i<largo;i++){
-          //  String newsAsString = getIntent().getStringExtra("noticia");
-        //}
+        public DownloadImageTask(ImageView bmImage) {
+            this.bmImage = bmImage;
+        }
 
+        protected Bitmap doInBackground(String... urls) {
+            String urldisplay = urls[0];
+            Bitmap mIcon11 = null;
+            try {
+                InputStream in = new java.net.URL(urldisplay).openStream();
+                mIcon11 = BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                Log.e("Error", e.getMessage());
+                e.printStackTrace();
+            }
+            return mIcon11;
+        }
 
-        //Intent intent = getIntent();
-        //News noticias[] = (News[]) intent.getParcelableExtra("noticias");
-        //Bundle args = intent.getBundleExtra("Bundle");
-        //News news[]= (News[]) args.getSerializable("Noticias");
-        textView.setText(muestra);
-        */
+        protected void onPostExecute(Bitmap result) {
+            bmImage.setImageBitmap(result);
+        }
     }
 }

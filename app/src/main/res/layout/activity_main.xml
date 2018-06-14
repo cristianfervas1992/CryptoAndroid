@@ -14,17 +14,15 @@
             android:id="@+id/seeNews"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="208dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="8dp"
             android:onClick="mostrarListadoNoticias"
             android:text="Ver Noticias"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.46"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/news"
-            app:layout_constraintVertical_bias="0.303" />
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -34,33 +32,6 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:title="CryptoApp" />
-
-        <TextView
-            android:id="@+id/news"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="152dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="TextView"
-            app:layout_constraintHorizontal_bias="0.516"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/largo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.546"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/seeNews" />
 
     </android.support.constraint.ConstraintLayout>
 

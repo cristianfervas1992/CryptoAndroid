@@ -45,121 +45,128 @@
 
                     <TextView
                         android:id="@+id/objTxt1"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="220dp"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
                     <TextView
                         android:id="@+id/objTxt2"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt3"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt4"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt5"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt6"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt7"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt8"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt9"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt10"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt11"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt12"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt13"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt14"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt15"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt16"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt17"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt18"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt19"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
                         android:id="@+id/objTxt20"
-                        android:layout_width="match_parent"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
